@@ -1,0 +1,2 @@
+#! /bin/bash
+pr -m -t -s\  BAE.33f1mono BAE.40f1mono BAE.50f1mono BAE.60f1mono BAE.70f1mono BAE.80f1mono BAE.90f1mono | gawk '{print $1,$5,$12,$19,$26,$33,$40,$47,$54}'

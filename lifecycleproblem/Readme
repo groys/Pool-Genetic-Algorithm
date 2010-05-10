@@ -1,0 +1,25 @@
+COMPILATION
+compile with makefile
+
+SOURCE CODE DESCRIPTION
+description of the various source files
+pool.h general headers, has option to set pool size as constant
+pool.cpp pool implementation
+random.cpp all the random number generator related stuff
+objective.cpp objective function for the lifecycle design problem,
+		comment in the right customer_info arrays,
+		for the paper we use neutral and technophile
+sim_run.c script for running program and collecting data for different number of threads
+
+RUNNING
+	for individual number of threads
+./pool NUM_THREADS < inputfile
+	for whole simulation to generate data for plot use sim_run
+	currently the input file give to ./pool is input1
+	#define RUN, allows you to set number of runs over which the data would be averaged
+./sim_run
+
+GENERATING FIGURES using GNUPLOT
+	mono_over_gens.gnu plots data from the file mono_over_gens 
+	
+gnuplot mono_over_gens.gnu

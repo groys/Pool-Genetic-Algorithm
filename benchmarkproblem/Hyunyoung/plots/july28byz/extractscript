@@ -1,0 +1,2 @@
+#! /bin/bash
+pr -m -t -s\  BAE-33-f3avg-50perthread-900gen BAE-40-f3avg-50perthread-900gen BAE-50-f3avg-50perthread-900gen BAE-60-f3avg-50perthread-900gen BAE-70-f3avg-50perthread-900gen BAE-80-f3avg-50perthread-900gen  | gawk '{print $1,$5,$12,$19,$26,$33,$40,$47,$54}'

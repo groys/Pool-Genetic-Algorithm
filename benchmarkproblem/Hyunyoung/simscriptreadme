@@ -1,0 +1,8 @@
+for each value of byzantine function
+1. subst value of byz fraction in defines.h
+2. make
+3. ./sim_run benchmarkfunction
+# save the avg overgens to a different name based on which simulation
+4 mv xxx
+5. generate the plots 
+

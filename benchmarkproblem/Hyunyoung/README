@@ -1,0 +1,27 @@
+SIMULATION checklist
+1. include/defines.h set the benchmark function f1/f2/f3/f4
+2. if doing a failure simulation in include/defines.h uncomment relevant parts
+parts of the following code.
+	a. for byzantine simulation, uncomment byzantine_antielitism and set a byzantine_fraction
+	b. for crash failure simulation uncomment crashfailure
+note that you can only do one type of simulation at a time, i.e. either no failure, crash failure or byzantine
+/* Regarding Failures */
+//#define CRASHFAILURE                                                        
+//#define BYZANTINE_RANDOM      //Inserts random individuals into the pool
+#define BYZANTINE_ANTIELITISM   //Writes individual back if it is worse than previous
+#define BYZANTINE_FRACTION (0.33)//This always needs to be defined, sim_run needs it
+
+COMPILATION
+in src/ make
+
+USAGE
+./pool NUM_THREADS RUN_NO < inputfile
+./sim_run benchmarkfunction 
+
+RUN
+./sim_run f4 will do the simulation for f4
+
+GENERATING FIGURES using GNUPLOT
+	mono_over_gens.gnu plots data from the file mono_over_gens 
+	
+gnuplot avg_over_gens.gnu

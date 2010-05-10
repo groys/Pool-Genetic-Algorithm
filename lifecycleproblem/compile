@@ -1,0 +1,2 @@
+gcc -lm rga1.c -o gaexec
+g++ -lm -pthread pool.cpp random.cpp objective.cpp -o pool

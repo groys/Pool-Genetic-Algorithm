@@ -1,0 +1,38 @@
+==========================================================
+INPUT FILE FOR REALGA
+==========================================================
+ARE YOU READING IT THROUGH A COMMENTED DATAFILE (Y/N) -> y
+
+How many generations ? -------------    : 100 
+Population Size ? ------------------    : 50
+Cross Over Probability ? ( 0 to 1 )     : 0.9
+Mutation Probability ? ( 0 to 1 ) ---   : 0.02
+Number of variables (Maximum 20) ---    : 1
+Binary or Real-coded parameters(b or r) : b
+Lower and Upper bounds of x[1] to x[N]  : -1.5 1.5
+Are these bounds rigid ? (y/n)          : n
+String length ?                         : 72 
+Sharing ? (y/n)  Sigma_share if yes     : n 
+Reports to be printed ? (y/n)           : n
+How many runs ?                         : 1 
+Enter selection opeartor
+ 1. Tournament selection (min or max set by MINM in the code) 
+ 2. Roulette wheel selection (always max)  
+ 3. Stochastic remainder roulette wheel selection (max) 
+                        Your Choice     : 1
+Enter tournament size for selection     : 2
+type of cross-over strategy.
+  1. xover in one variable
+  2. xover in all variables
+  3. xover on a straight line
+		 Your choice            : 2
+Type of cross over ? (s/b)              : s
+Give eta for SBX and mutation           : 2 20
+random seed number                      : 0.123
+---------------------------------------------------------
+N.B. : The above data file contains input data where each
+input is preceded by a comment (which ends with a ':') except
+the first one. Note that this ':' is a must for signalling
+the end of comment. Also ':' should not be used anywhere 
+in the middle of comment.
+---------------------------------------------------------
